@@ -1,5 +1,4 @@
 import typing
-import numpy as np
 
 number = -4
 
@@ -25,9 +24,6 @@ print("quo is: " + str(quo))
 num_list: typing.List[int] = [1, 2, 3, 4, 5]
 num_tuple: typing.Tuple[int, int, int] = (1, 2, 3)
 dctnry: typing.Dict[str, int] = {"key1": 1, "key2": 2, "key3": 3}
-
-result = np.nan_to_num(np.divide(7,0), nan=0)
-print("result is: " + result)
 
 word1 = "How"
 word2 = "do"
