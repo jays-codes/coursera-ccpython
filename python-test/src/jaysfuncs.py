@@ -39,3 +39,41 @@ print("Sum2 is: " + str(sum)
       + " and type is: " + str(type))
 
 print(getSum(3, 4))
+
+print("ans: " + str((2**2) == 4))
+
+number=10
+
+if number > 11: 
+  print(0)
+elif number != 10:
+  print(1)
+elif number >= 20 or number < 12:
+  print(2)
+else:
+  print(3)
+  
+print(10%3)
+print(4095%4096)
+
+
+number = 4
+if number * 4 < 15:
+ print(number / 4)
+elif number < 5:
+ print(number + 3)
+else:
+ print(number * 2 % 5)
+ 
+def greater_value(x, y):
+    if x > y:
+        return x
+    else:
+       return y
+
+
+print(greater_value(10,3*5))
+
+x = 5*2
+
+print((10 != x) or (10 > x))
