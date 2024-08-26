@@ -21,3 +21,42 @@ for home in teams:
       
 for c in "Hello":
   print(c)
+  
+
+print("sqr of each even num in an array using list comprehension")  
+numbers = [1, 2, 3, 4, 5]
+print(numbers)
+sqr_nums = [x**2 for x in numbers if x%2==0]
+print(sqr_nums)
+
+
+print("run " * 8)
+
+# demo of nested while loop
+x = 0
+while x < 5:
+  print(x)
+  x += 1
+  
+  input = "four score and seven years ago"
+  
+  print([c for c in input if c.lower() in ['a', 'e', 'i', 'o', 'u']])
+  
+  
+# Should print: 11, 9, 7, 5, 3, 1 once the problem is fixed.
+for n in range(11, -2):
+  if n % 2 != 0:
+    print(n, end=" ")
+
+  for n in range(11, -2):
+    if n % 2 != 0:
+        print(n, end=" ")
+
+
+
+
+
+
+
+
+
