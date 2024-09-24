@@ -181,3 +181,63 @@ print(music_genres)
 host_addresses = {"router": "192.168.1.1", "localhost": "127.0.0.1", "google": "8.8.8.8"}
 host_addresses.keys()
 print(host_addresses.keys())
+
+filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+# Generate new_filenames as a list containing the new filenames
+# using as many lines of code as your chosen method requires.
+# use list comprehension to iterate over the filenames list
+
+new_filenames = [filename.replace(".hpp", ".h") for filename in filenames]
+print(new_filenames)
+
+# Start your code here
+
+
+def pig_latin(text):
+  say = ""
+  # Separate the text into words
+  words = text.split()
+  for word in words:
+    # Create the pig latin word and add it to the list
+    # moving the first character to the end of each word;
+    # then appending the letters "ay" to the end of each word.
+    say += word[1:] + word[0] + "ay "
+    
+    
+    # Turn the list back into a phrase
+  return say
+    
+print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
+print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
+
+
+
+def biography_list(people):
+    # Iterate over each "person" in the given "people" list of tuples. 
+    for person in people: 
+
+
+        # Separate the 3 items in each tuple into 3 variables:
+        # "name", "age", and "profession"   
+        name, age, profession = person
+
+
+        # Format the required sentence and place the 3 variables 
+        # in the correct placeholders using the .format() method.
+        print("{} is {} years old and works as {}".format(name, age, profession))
+        #print(___.format(___))
+
+
+
+
+# Call to the function:
+biography_list([("Ira", 30, "a Chef"), ("Raj", 35, "a Lawyer"), ("Maria", 25, "an Engineer")])
+
+
+# Click Run to submit code
+
+
+# Output should match:
+# Ira is 30 years old and works as a Chef
+# Raj is 35 years old and works as a Lawyer
+# Maria is 25 years old and works as an Engineer
