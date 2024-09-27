@@ -1,0 +1,54 @@
+
+#instance method Example
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def description(self):
+        return f"{self.name} is {self.age} years old"
+
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
+
+# Example usage:
+my_dog = Dog("Buddy", 3)
+print(my_dog.description())  # Output: Buddy is 3 years old
+print(my_dog.speak("Woof Woof"))  # Output: Buddy says Woof Woof
+
+# Class method Example
+class Dog:
+    species = "Canis familiaris"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @classmethod
+    def from_birth_year(cls, name, birth_year):
+        return cls(name, 2021 - birth_year)
+    
+    @staticmethod
+    def dog_years(age):
+        return age * 7
+    
+# Example usage
+buddy = Dog.from_birth_year("Buddy", 2015)
+print(buddy.age)  # Output: 6
+print(Dog.dog_years(6))  # Output: 42
+
+# apple class
+class Apple:
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
+
+    # def __str__(self):
+    #     return f"This apple is {self.color} and its flavor is {self.flavor}"
+    
+# Example usage
+jonagold = Apple("red", "sweet")
+print(jonagold)  # Output: This apple is red and its flavor is sweet
+
+
+
